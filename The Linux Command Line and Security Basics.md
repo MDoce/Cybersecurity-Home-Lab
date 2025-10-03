@@ -24,7 +24,7 @@ sudo useradd bobby -- user add is a barebones way of creating a user. No home di
 
 sudo adduser sally -- adduser requires a password to be set, creates a home directory, and allows extra configurations to be made
 
-![[CSAssignment2_5.png]]
+![Alt text](images/CSAssignment2_5.png)
 
 ### Switching Users
 
@@ -32,7 +32,7 @@ su sally
 
 The command switches the user to sally and asks for the password for user sally. The prompt will change after the command is entered and will now be sally@docem-virtual-machine:$
 
-![[CSAssignment2_6.png]]
+![Alt text](images/CSAssignment2_6.png)
 
 ### Creating a User as Sally
 
@@ -40,7 +40,7 @@ sudo add user earl
 
 This command will not create a user and an error will be passed through. Sally is not in the sudo group, so she is unable to use sudo privileges. Users who are not in the sudo group do not have access to commands that require root access.
 
-![[CSAssignment2_7.png]]
+![Alt text](images/CSAssignment2_7.png)
 
 ### Changing a User's Password
 
@@ -48,7 +48,7 @@ sudo passwd sally
 
 This updates a user's password and asks for the new password to be input twice.
 
-![[CSAssignment2_9.png]]
+![Alt text](images/CSAssignment2_9.png)
 
 ### Logging Out of Root Shell
 
@@ -62,7 +62,7 @@ uid = User ID number
 gid = Group ID number
 groups = shows the groups a user is apart of
 
-![[CSAssignment2_10.png]]
+![Alt text](images/CSAssignment2_10.png)
 
 ## Group Tasks
 
@@ -72,7 +72,7 @@ groups
 
 The groups command lists the groups a user is apart off.
 
-![[CSAssignment2_12.png]]
+![Alt text](images/CSAssignment2_12.png)
 
 ### Adding to Sudo Group
 
@@ -82,7 +82,7 @@ sudo adduser earl
 
 aG stand for append group. The command adds sally to the sudo group. Now that sally is apart of the sudo group she is able to use sudo to create new users.
 
-![[CSAssignment2_13.png]]
+![Alt text](images/CSAssignment2_13.png)
 
 ### Creating and Adding to Groups
 
@@ -92,7 +92,7 @@ groups sally
 
 The command sequence allows you to create a new group, add a user to the group, and then check which groups the user is apart of.
 
-![[CSAssignment2_sallygroups.png]]
+![Alt text](images/CSAssignment2_sallygroups.png)
 
 ## Permission and Access Control Lists
 
@@ -103,7 +103,7 @@ ls -ld lab1
 
 The commands make a new directory and then view its details. The d in front of the output tells you it is a directory. The next three rwx are the owner permissions followed by the group permissions, and the the user permissions. The r stand for read, w write, and x execute. The directory owner and then group are listed. For this directory the owner and group have read, write and execute permissions, while the user can only read and execute. The owner and group owner are both docem.
 
-![[CSAssignment2_17.png]]
+![Alt text](images/CSAssignment2_17.png)
 
 ### Creating a Bash File
 
@@ -114,7 +114,7 @@ chmod +x helloWorld
 
 A bash script is created using echo and then made executable using chmod +x. The script is then run and you can see the output printed into the terminal.
 
-![[CSAssignment2_18.png]]
+![Alt text](images/CSAssignment2_18.png)
 
 ### Viewing Permissions
 
@@ -125,7 +125,7 @@ ls -la helloWorld
 The owner of the file has rwx permissions, the group and user can only execute.
 The command is then entered to give the group and user to read and execute. When the permissions of the file are viewed again the user and group now have the read permission they previously did not have.
 
-![[CSAssignment2_19.png]]
+![Alt text](images/CSAssignment2_19.png)
 
 ### Viewing ACL of a File
 
@@ -133,7 +133,7 @@ getfacl helloWorld
 
 The command shows the action control list of the file. The group, owner and additional information is shown
 
-![[CSAssignment2_20.png]]
+![Alt text](images/CSAssignment2_20.png)
 
 ### Setting ACL for a File
 
@@ -142,4 +142,4 @@ getfacl helloWorld
 
 The command modifies the acl and gives sally read and write permissions. When entering getfacl we can see that sally now has these permissions. 
 
-![[CSAssignment2_21.png]]
+![Alt text](images/CSAssignment2_21.png)
