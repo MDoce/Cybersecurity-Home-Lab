@@ -16,8 +16,7 @@ After the command is run the prompt should be as follows: root@docem-virtual-mac
 
 The # symbol at the end of the prompt indicates that you have a root shell open.
 
-![[CSAssignment2_4.png]]
-
+![Alt text](images/CSAssignment2_4.png)
 
 ### Creating Users
 
