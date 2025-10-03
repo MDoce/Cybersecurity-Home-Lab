@@ -1,6 +1,6 @@
 # The Linux Command Line and Security Basics
 
-This lab introduces fundamental Linux user, group, and permission management commands. The tasks were performed on an Ubuntu VM over SSH. Each step demonstrates common system administration actions and their security implications.
+This lab introduces the basics of managing users, groups and permissions in Linux. The lab was performed in an Ubuntu virtual machine using ssh. The lab shows common system administration tasks.
 
 ---
 
