@@ -6,4 +6,4 @@ This repository showcases my cybersecurity home lab projects, which are a collec
 ## Table Of Contents
 
 ### 1 Cyber Security Tools
-- [The Linux Command Line and Security Basics](The%20Linus%20Command%20Line%20and%20Security%20Basics.md)
+- [The Linux Command Line and Security Basics](The%20Linux%20Command%20Line%20and%20Security%20Basics.md)
