@@ -103,11 +103,11 @@ I wrote a program that invokes system(ls);. I then compiled it and made it a Set
 
 I can now run this program and it produces the following output.
 
-![Alt text](images/TASK1SS2.png)
+![Alt text](images/TASK6SS2.png)
 
 This program is vulnerable for attack. The system(ls); line creates a vulnerability an attacker can exploit. When system(ls) is ran a shell, /bin/sh, is ran and told to run ls. The shell looks for ls by searching the folders listed in PATH. Because any user can edit the PATH variable, I was able to change the PATH so my malicious code was ran. Below you can see me edit the PATH and created a C code that when ran prints "malicious code executed!!!".
 
-![Alt text](images/TASK1SS4.png)
+![Alt text](images/TASK6SS4.png)
 
 Because zsh does not drop the elevated EUID when invoked in a Set-UID process my fake ls program was ran with root privileges which makes this especially dangerous.
 
