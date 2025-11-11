@@ -15,7 +15,7 @@ The "printenv" command displays every environment variable that is currently set
 
 #### Viewing Specific Environment Variables 
 
-![Alt text](images/TASK1SS2.png)
+![Alt text](images/Task1SS2.png)
 
 The two commands in the above snippet the environment variable for the Present Working Directory (PWD). Grep is used to search for the specific variable in command 2, while command one shows the value of the specific variable.
 
